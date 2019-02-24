@@ -4,15 +4,26 @@ spring:
     - dev
 ---
 server:
-  port: 3355
+  port: 8001
 spring:
   application:
-    name: MICRO-SERVER-DEV
-  profiles: dev #开发环境
+    name: EMPLOYEE-PROVIDER-DEV
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka-7001.com:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
+  instance:
+    prefer-ip-address: true #显示客户端真实ip
 ---
 server:
-  port: 3356
+  port: 8002
 spring:
   application:
-    name: MICRO-SERVER-TEST
-  profiles: test #开发环境
+    name: EMPLOYEE-PROVIDER-TEST
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka-7001.com:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
+  instance:
+    prefer-ip-address: true #显示客户端真实ip
+
