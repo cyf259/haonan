@@ -19,7 +19,7 @@ eureka:
 zuul:
   routes:
     #访问路径http://localhost:9527/employee-provider/employee/login/xx
-    gdxEmployee.serviceId: employee-provider
+    gdxEmployee.serviceId: employee-provider-dev,employee-provider-test
     #将访问路径替换为http://localhost:9527/employee/login/xx或上面的
     gdxEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
   #指定访问路径不要前面的只能http://localhost:9527/employee/login/xx
