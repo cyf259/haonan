@@ -20,7 +20,7 @@ zuul:
   routes:
     #访问路径http://localhost:9527/employee-provider/employee/login/xx
     gdxEmployee.serviceId: employee-provider-dev,employee-provider-test
-    gdxProduct.serviceId: product-provider
+    gdxProduct.serviceId: PRODUCT-PROVIDER-DEV
     #将访问路径替换为http://localhost:9527/employee/login/xx或上面的
     #gdxEmployee.path: /**  # 匹配 /xxx开头的请求映射到user-provider服务上
     gdxProduct.path: /product/**
