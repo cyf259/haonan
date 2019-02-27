@@ -19,7 +19,7 @@ eureka:
 server:
   port: 8002
 spring:
-  profiles: dev
+  profiles: pro
   application:
     name: PRODUCT-PROVIDER-DEV
 eureka:
